@@ -8,13 +8,22 @@ import Main from '../Main';
 import Footer from '../Footer';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <Header />
-    <Main />
-    <Footer />
-  </div>
-);
+const App = () => {
+  const sections = [
+    'presentation',
+    'skills',
+    'realizations',
+    'education',
+    'cv',
+  ];
+  return (
+    <div className="app">
+      <Header sections={sections} />
+      <Main sections={sections} />
+      <Footer />
+    </div>
+  );
+};
 
 // == Export
 export default App;

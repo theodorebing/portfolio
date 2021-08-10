@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Main = () => {
+import Section from './Section';
+
+const Main = ({ sections }) => {
   console.log('test');
   return (
     <main className="main">
-      <h1>Main</h1>
+      {sections.map((section) => (
+        <Section sectionName={section} sectionId={section} />
+      ))}
+
     </main>
   );
 };

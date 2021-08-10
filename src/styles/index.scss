@@ -53,6 +53,20 @@ body {
 }
 
 .main {
+  scroll-behavior: scroll;
+  height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &-section {
+    margin-top: 30px;
+    height: 350px;
+  }
 
 }
 

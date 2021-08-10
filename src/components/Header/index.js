@@ -10,7 +10,7 @@ const Header = ({ sections }) => {
       </a>
       <nav className="header-menu">
         {sections && sections.map((section) => (
-          <a key={section} href={`#${section}`} className="header-menu-link">{section}</a>
+          <a key={section.name} href={`#${section.name}`} className="header-menu-link">{section.name}</a>
         ))}
       </nav>
     </header>

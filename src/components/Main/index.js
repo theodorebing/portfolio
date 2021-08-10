@@ -8,7 +8,7 @@ const Main = ({ sections }) => {
     <div className="main_fade">
       <main className="main">
         {sections.map((section) => (
-          <Section key={section} sectionName={section} sectionId={section} />
+          <Section key={section.name} section={section} />
         ))}
       </main>
     </div>

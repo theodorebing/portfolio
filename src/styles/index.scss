@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+  background-color: vars.$black;
   margin-top: 1em;
   text-align: center;
   &-title {
@@ -36,7 +37,8 @@ body {
     display: flex;
     justify-content: center;
     font-size: 16px;
-    margin: 28px 0;
+    margin: 28px 0 0;
+    padding-bottom: 28px;;
 
     &-link{
       padding: 5px 10px;
@@ -53,28 +55,60 @@ body {
 }
 
 .main {
-  scroll-behavior: scroll;
-  height: 70vh;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: calc(100vh - 265px);
+  // overflow-x: visible;
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  // scroll-snap-type: y mandatory;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+  // -ms-overflow-style: none;  /* IE and Edge */
+  // scrollbar-width: none;  /* Firefox */
   &-section {
-    margin-top: 30px;
+    margin: 0 auto;
+    width: 50%;
     height: 350px;
-  }
 
+    &-title {
+      padding: 50px 0;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  } 
+  
+  &_fade {
+
+    position: relative;
+    &:before {
+      
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(to top, rgba(250, 250, 250, 0), #1a1a1a 90%);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(to bottom, rgba(250, 250, 250, 0), #1a1a1a 90%);
+    }
+  }
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   left: 0;
-
+  width: 100%;
+  background-color: vars.$black;
+  height: 100px;
 }
 
 // h1 {

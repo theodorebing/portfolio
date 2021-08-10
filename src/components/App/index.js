@@ -10,7 +10,7 @@ import Footer from '../Footer';
 // == Composant
 const App = () => {
   const sections = [
-    'presentation',
+    'foreword',
     'skills',
     'realizations',
     'education',

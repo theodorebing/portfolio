@@ -7,7 +7,7 @@ const Main = ({ sections }) => {
   return (
     <main className="main">
       {sections.map((section) => (
-        <Section sectionName={section} sectionId={section} />
+        <Section key={section} sectionName={section} sectionId={section} />
       ))}
 
     </main>

@@ -2,9 +2,8 @@ const sections = [
   {
     name: 'foreword',
     content: {
-      text: `I’m a fullstack web & mobile developper intersted in giving users
-      the best experience and design possible, while keeping them as simple as possible.
-      I have a creative mind and like to keep it always active with new ideas to realize.`,
+      text: `I’m a fullstack web & mobile developper intersted in giving users the best experience and design possible, while keeping them as simple as possible. 
+I have a creative mind and like to keep it always active with new ideas to realize.`,
     },
   },
   {

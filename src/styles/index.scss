@@ -6,6 +6,7 @@ body {
   font-family: vars.$main-font;
   background-color: vars.$background-color;
   color: vars.$white;
+  cursor: default;
 }
 
 .header {
@@ -13,6 +14,7 @@ body {
   margin-top: 1em;
   text-align: center;
   &-title {
+    display: inline-block;
     font-size: vars.$header-titleSize;
     font-weight: 300;
     background-color: #f0f0f070;
@@ -22,6 +24,7 @@ body {
       -moz-background-clip: text;
             background-clip: text;
     &_sub {
+      cursor: default;
       margin-top: 1em;
       background-color: #f0f0f014;
       color: transparent;
@@ -45,7 +48,7 @@ body {
       margin: 0 28px;
       transition: all 1s ease 0s;
       &:hover {
-        border-radius: 50px;
+        border-radius: vars.$radius;
         color: #f7f7f7;
         text-shadow: 0px 0px 5px rgb(255, 255, 255);
         box-shadow: 0px 0px 5px rgb(255, 255, 255), inset 0px 0px 5px rgb(255, 255, 255);
@@ -68,12 +71,58 @@ body {
   &-section {
     margin: 0 auto;
     width: 50%;
-    height: 350px;
+    padding-bottom: 50px;
+    // height: 350px;
+    // box-shadow: 0 2px 5px rgb(255, 255, 255);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 25px 15px -22px;
 
     &-title {
       padding: 50px 0;
       font-size: 25px;
       font-weight: 500;
+    }
+
+    &-content {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    &-text {
+      font-size: 1.3em;
+      font-weight: 200;
+      line-height: 1.3em;
+    }
+
+    &-icons{
+      &_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 80%;
+        // background-color: vars.$darkgrey;
+        border-radius: 100px;
+        margin: 30px auto;
+        padding: 10px 0;
+        // box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), inset 0px 0px 10px rgb(255, 255, 255, 0.5);
+
+      }
+    }
+
+    .icons {
+      width: 77px;
+      margin: 0 30px;
+    }
+
+    &-icon {
+      height: 133px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &-iconsText {
+      color: vars.$grey;
     }
   } 
   

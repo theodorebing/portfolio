@@ -6,8 +6,8 @@ const Header = ({ sections }) => {
     <header className="header">
       <a href="/">
         <h1 className="header-title">théodore bing</h1>
-        <h2 className="header-title_sub">fullstack developper</h2>
       </a>
+      <h2 className="header-title_sub">fullstack developper</h2>
       <nav className="header-menu">
         {sections && sections.map((section) => (
           <a key={section.name} href={`#${section.name}`} className="header-menu-link">{section.name}</a>

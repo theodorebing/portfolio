@@ -77,7 +77,7 @@ I have a creative mind and like to keep it always active with new ideas to reali
         },
         {
           title: 'this website - my personnal portfolio',
-          text: `The intention behind this webside was to show my skills and projects with a minimalist website done in only one day and coded entirely by hand. No Wordpress or any other CMS involved, and no back end at all either.
+          text: `The intention behind this webside was to show my skills and projects with a minimalist website done in only one day and coded entirely by hand, as a challenge from myself to myself. No Wordpress or any other CMS involved, and no back end at all either.
 There are some animations and stuffs, so if you want to trully see all the work done on the site, use a computer instead ;-).
 
 Technology involved : JavaScript, React, Sass, React Reveal & human mind (with proven efficiency since 2.5 million years)`,

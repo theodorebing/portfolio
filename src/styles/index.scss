@@ -85,7 +85,7 @@ body {
   // scrollbar-width: none;  /* Firefox */
   &-section {
     margin: 0 auto;
-    width: 50%;
+    width: 66%;
     padding-bottom: 50px;
     // height: 350px;
     // box-shadow: 0 2px 5px rgb(255, 255, 255);
@@ -109,7 +109,7 @@ body {
 
     &-content {
       margin: 0 auto;
-      width: 80%;
+      width: 88%;
     }
 
     &-text {
@@ -283,7 +283,7 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
 
   .header {
     &-title {
@@ -307,7 +307,7 @@ body {
         text-align: center;
       }
       &-content {
-        width: 100%;
+        width: 88%;
       }
 
       .icons {

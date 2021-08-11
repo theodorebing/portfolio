@@ -1,3 +1,6 @@
+import EN from '../pdfs/tbENCV.pdf';
+import FR from '../pdfs/tbFRCV.pdf';
+
 const sections = [
   {
     name: 'foreword',
@@ -47,6 +50,10 @@ I have a creative mind and like to keep it always active with new ideas to reali
           img: 'https://img.icons8.com/color/480/000000/css3.png',
           skillName: 'css 3',
         },
+        {
+          img: 'https://img.icons8.com/color/480/000000/typescript.png',
+          skillName: 'TypeScript',
+        },
       ],
       subText: 'in sight',
       subIcons: [
@@ -60,7 +67,7 @@ I have a creative mind and like to keep it always active with new ideas to reali
   {
     name: 'realizations',
     content: {
-      text: 'realizations text',
+      text: 'Here are some of the realizations I\'ve done and I\'ve decided to put online for you to see.',
       projects: [
         {
           title: 'realizations title',
@@ -69,8 +76,9 @@ I have a creative mind and like to keep it always active with new ideas to reali
           link: '',
         },
         {
-          title: 'this website',
-          text: 'tecnology involved : JavaScript, React, Sass, React Reveal & human mind (with proven efficiency since 2.5 million years)',
+          title: 'this website - my personnal portfolio',
+          text: `The intention behind this webside was to show my skills and projects with a minimalist website done in only one day and coded entirely by hand. No Wordpress or any other CMS involved, and no back end at all either.
+Technology involved : JavaScript, React, Sass, React Reveal & human mind (with proven efficiency since 2.5 million years)`,
           img: '',
           link: '',
         },
@@ -80,13 +88,27 @@ I have a creative mind and like to keep it always active with new ideas to reali
   {
     name: 'education',
     content: {
-      text: '',
+      text: `My curriculum regarding programmation, or web and mobile development, call it as you want, is as simple as that : 
+
+I began creating my first websites at 13 and never stopped until I decided 20 years later that this part of my life was to be my daily job and that I attend intensive training at O'clock School, France.`,
+      link: 'https://oclock.io/',
+      img: 'https://21douze.fr/wp-content/uploads/2018/10/Logo-noir-vert-800x400.png',
     },
   },
   {
     name: 'cv',
     content: {
-      text: '',
+      text: 'Feel free to have a look and download my pdf CV, I\'m just a click away from you:',
+      links: [
+        {
+          href: EN,
+          lang: 'English',
+        },
+        {
+          href: FR,
+          lang: 'French',
+        },
+      ],
     },
   },
 ];

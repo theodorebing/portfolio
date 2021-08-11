@@ -46,8 +46,8 @@ const sections = [
           link: '',
         },
         {
-          title: 'realizations title',
-          text: '',
+          title: 'this website',
+          text: 'tecnology involved : JavaScript, React, Sass, AOS & human mind (with proven efficiency since 2.5 million years)',
           img: '',
           link: '',
         },

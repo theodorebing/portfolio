@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 const Section = ({ section }) => {
   const { name, content } = section;
@@ -19,10 +20,12 @@ const Section = ({ section }) => {
         {icons && (
         <div className="main-section-icons_container">
           {icons.map((icon) => (
-            <div key={icon.skillName} className="main-section-icon">
-              <img className="main-section-icons icons" src={icon.img} alt="skills" />
-              <p className="main-section-iconsText">{icon.skillName}</p>
-            </div>
+            <Fade delay={500}>
+              <div key={icon.skillName} className="main-section-icon">
+                <img className="main-section-icons icons" src={icon.img} alt="skills" />
+                <p className="main-section-iconsText">{icon.skillName}</p>
+              </div>
+            </Fade>
           ))}
         </div>
         )}
@@ -34,10 +37,12 @@ const Section = ({ section }) => {
         {subIcons && (
         <div className="main-section-icons_container">
           {subIcons.map((icon) => (
-            <div key={icon.skillName} className="main-section-icon">
-              <img className="main-section-icons icons" src={icon.img} alt="skills" />
-              <p className="main-section-iconsText">{icon.skillName}</p>
-            </div>
+            <Fade delay={500}>
+              <div key={icon.skillName} className="main-section-icon">
+                <img className="main-section-icons icons" src={icon.img} alt="skills" />
+                <p className="main-section-iconsText">{icon.skillName}</p>
+              </div>
+            </Fade>
           ))}
         </div>
         )}

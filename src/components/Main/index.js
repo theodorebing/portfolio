@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Fade from 'react-reveal/Fade';
 import Section from './Section';
 
 const Main = ({ sections }) => {
@@ -8,7 +9,9 @@ const Main = ({ sections }) => {
     <div className="main_fade">
       <main className="main">
         {sections.map((section) => (
-          <Section key={section.name} section={section} />
+          <Fade bottom>
+            <Section key={section.name} section={section} />
+          </Fade>
         ))}
       </main>
     </div>

@@ -245,6 +245,9 @@ body {
 .pdfImg {
   filter: invert(1);
   width: 100px;
+  &:hover {
+    filter: invert(1) hue-rotate(-180deg) drop-shadow(0px 0px 8px rgb(255, 0, 0));
+  }
 }
 
 .react-reveal{

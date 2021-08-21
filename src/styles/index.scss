@@ -306,6 +306,14 @@ body {
 
 @media (max-width: 950px) {
 
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+
   .header {
     height: 150px;
     &-title {
@@ -325,10 +333,11 @@ body {
   }
 
   .main {
-    height: calc(100% - 250px);
+    // height: calc(100% - 250px);
     // height: -webkit-fill-available;
 
     &-section {
+      // padding-top: 150px;
       width: 80%;
       &-title {
         text-align: center;

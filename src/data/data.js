@@ -1,3 +1,5 @@
+import toutes from '../assets/images/toutes.jpeg';
+import portfolio from '../assets/images/portfolio.jpeg';
 import EN from '../pdfs/tbENCV.pdf';
 import FR from '../pdfs/tbFRCV.pdf';
 
@@ -70,19 +72,21 @@ I have a creative mind and like to keep it always active with new ideas to reali
       text: 'Here are some of the realizations I\'ve done and I\'ve decided to put online for you to see.',
       projects: [
         {
-          title: 'realizations title',
-          text: '',
-          img: '',
-          link: '',
+          title: '18 Toutes',
+          text: `This is a simple website, made to share organization '18 Toutes' principles about French linguistic. I created the entire site, with the aim of creating a harmonious whole simbolizing the two genres of the French language, where everything is fluid. Everything is done by hand.
+
+Technology involved : JavaScript, React, Sass, React Reveal & human mind (with proven efficiency since 2.5 million years)`,
+          img: toutes,
+          link: 'https://18toutes.surge.sh/',
         },
         {
           title: 'this website - my personnal portfolio',
           text: `The intention behind this webside was to show my skills and projects with a minimalist website done in only one day and coded entirely by hand, as a challenge from myself to myself. No Wordpress or any other CMS involved, and no back end at all either.
-There are some animations and stuffs, so if you want to trully see all the work done on the site, use a computer instead ;-).
+There are some animations and stuffs, so if you want to see all the work done on the site, use a computer instead ;-).
 
-Technology involved : JavaScript, React, Sass, React Reveal & human mind (with proven efficiency since 2.5 million years)`,
-          img: '',
-          link: '',
+Technology involved : JavaScript, React, CSS, HTML`,
+          img: portfolio,
+          link: 'https://theodorebing.com/',
         },
       ],
     },

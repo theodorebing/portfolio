@@ -193,6 +193,22 @@ body {
       }
     }
 
+    &-image {
+      display: block;
+      width: 60%;
+      margin: 10% auto;
+      border-radius: 20px;
+      filter: drop-shadow(1px 1px 10px rgba(0, 0, 255, 0.425));
+      box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.514);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        filter: drop-shadow(1px 1px 20px blue);
+        width: 62%;
+        margin: 10% auto 9%;
+        box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.514);
+      }
+    }
+
     &-cv {
       display: flex;
       justify-content: space-around;
@@ -344,6 +360,14 @@ body {
       }
       &-content {
         width: 88%;
+      }
+
+      &-image {
+        width: 88%;
+        &:hover {
+          width: 90%;
+          margin: 10% auto 9%;
+        }
       }
 
       // .icons {

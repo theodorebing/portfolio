@@ -52,10 +52,16 @@ const Section = ({ section }) => {
             const {
               title, text, img, link,
             } = project;
+            console.log(img);
             return (
               <>
-                <h4 className="main-section-title main-section-subtitle">{title}</h4>
+                <a href={link} target="_blank" rel="noreferrer">
+                  <h4 className="main-section-title main-section-subtitle">{title}</h4>
+                </a>
                 <p className="main-section-text main-section-subtext">{text}</p>
+                <a href={link} target="_blank" rel="noreferrer">
+                  <img className="main-section-image" src={img} alt={title} />
+                </a>
               </>
             );
           })}

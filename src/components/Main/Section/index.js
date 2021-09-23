@@ -1,19 +1,18 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import EN from '../../../pdfs/tbENCV.pdf';
-import FR from '../../../pdfs/tbFRCV.pdf';
+import PropTypes from 'prop-types';
 
 const Section = ({ section }) => {
+  // console.log(section);
   const { name, content } = section;
   const {
     text, subText, icons, subIcons, projects, img, link, links,
   } = content;
-  console.log('section');
   return (
     <section className="main-section" id={name}>
       <h3 className="main-section-title">{name}</h3>
       {content && (
-        <div className="main-section-content">
+        <div className="main-section-content" key={name}>
           {text && (
             <p className="main-section-text">
               {text}
@@ -22,8 +21,8 @@ const Section = ({ section }) => {
           {icons && (
             <div className="main-section-icons_container">
               {icons.map((icon) => (
-                <Fade delay={500}>
-                  <div key={icon.skillName} className="main-section-icon">
+                <Fade delay={500} key={icon.skillName}>
+                  <div className="main-section-icon">
                     <img className="main-section-icons icons" src={icon.img} alt="skills" />
                     <p className="main-section-iconsText">{icon.skillName}</p>
                   </div>
@@ -39,8 +38,8 @@ const Section = ({ section }) => {
           {subIcons && (
             <div className="main-section-icons_container">
               {subIcons.map((icon) => (
-                <Fade delay={100}>
-                  <div key={icon.skillName} className="main-section-icon">
+                <Fade delay={100} key={icon.skillName}>
+                  <div className="main-section-icon">
                     <img className="main-section-icons icons" src={icon.img} alt="skills" />
                     <p className="main-section-iconsText">{icon.skillName}</p>
                   </div>
@@ -52,9 +51,8 @@ const Section = ({ section }) => {
             const {
               title, text, img, link,
             } = project;
-            console.log(img);
             return (
-              <>
+              <div key={title}>
                 <a href={link} target="_blank" rel="noreferrer">
                   <h4 className="main-section-title main-section-subtitle">{title}</h4>
                 </a>
@@ -62,7 +60,7 @@ const Section = ({ section }) => {
                 <a href={link} target="_blank" rel="noreferrer">
                   <img className="main-section-image" src={img} alt={title} />
                 </a>
-              </>
+              </div>
             );
           })}
           {img && link && (
@@ -73,7 +71,7 @@ const Section = ({ section }) => {
           {links && (
             <div className="main-section-cv">
               {links.map((cvLink) => (
-                <div className="main-section-cvLink">
+                <div key={cvLink.href} className="main-section-cvLink">
                   <p className="main-section-text main-section-subtext">{cvLink.lang}</p>
                   <a href={cvLink.href} target="_blank" rel="noreferrer">
                     <img className="pdfImg" src="https://img.icons8.com/ios/500/000000/pdf--v2.png" alt="cv" />
@@ -90,6 +88,30 @@ const Section = ({ section }) => {
 
     </section>
   );
+};
+
+Section.propTypes = {
+  section: PropTypes.shape({
+    name: PropTypes.string,
+    content: PropTypes.shape({
+      text: PropTypes.string,
+      subText: PropTypes.string,
+      icons: PropTypes.arrayOf(
+        PropTypes.object,
+      ),
+      subIcons: PropTypes.arrayOf(
+        PropTypes.object,
+      ),
+      projects: PropTypes.arrayOf(
+        PropTypes.object,
+      ),
+      img: PropTypes.string,
+      link: PropTypes.string,
+      links: PropTypes.arrayOf(
+        PropTypes.object,
+      ),
+    }),
+  }).isRequired,
 };
 
 export default Section;

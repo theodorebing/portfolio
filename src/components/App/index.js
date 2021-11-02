@@ -8,7 +8,7 @@ import Main from '../Main';
 import Footer from '../Footer';
 import sections from '../../data/data';
 
-// == Composant
+// == Component
 const App = () => (
   <div className="app">
     <Header sections={sections} />

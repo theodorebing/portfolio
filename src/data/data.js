@@ -1,5 +1,7 @@
 import toutes from '../assets/images/toutes.jpeg';
 import portfolio from '../assets/images/portfolio.jpeg';
+import thelink2 from '../assets/images/thelink2.png';
+
 import EN from '../pdfs/tbENCV.pdf';
 import FR from '../pdfs/tbFRCV.pdf';
 
@@ -71,6 +73,25 @@ I have a creative mind and like to keep it always active with new ideas to reali
     content: {
       text: 'Here are some of the realizations I\'ve done and I\'ve decided to put online for you to see.',
       projects: [
+        {
+          title: 'the link',
+          text: `This app is still under construction and only a public repository is available at the moment.
+
+the link is a simple app I’ve created on my own to store web links in a user-friendly interface.
+
+The goal with the link is to be able to store links people share with you or links you want to keep by organizing them in a nice viewable way, with a preview of the link itself, and to store each link inside customisable lists within categories created by users to fit their needs.
+
+The app is written with JavaScript (back and front).
+Back side is using node.js and the database is created with SQL using sequelize.
+Front is created with React and Redux.
+Other dependencies can be found in package.json files.
+For the link previews app is using linkpreview.net API.
+For drag and drop functions, I’ve used the react-beautiful-dnd package created by atlassian (Trello).
+
+Finally, the name of the app, the link, is a tribute to the French metal band Gojira who’s a great inspiration for me since their album the link and it’s powerful sound and lyrics, with its deep connection to the human spirit, to the earth and the natural elements.`,
+          img: thelink2,
+          link: 'https://github.com/theodorebing/Discovery',
+        },
         {
           title: '18 Toutes',
           text: `This is a simple website, made to share organization '18 Toutes' principles about French linguistic. I created the entire site, with the aim of creating a harmonious whole simbolizing the two genres of the French language, where everything is fluid. Everything is done by hand.

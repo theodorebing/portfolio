@@ -6,12 +6,13 @@ import './styles.scss';
 import Header from '../Header';
 import Main from '../Main';
 import Footer from '../Footer';
+import sections from '../../data/data';
 
-// == Composant
+// == Component
 const App = () => (
   <div className="app">
-    <Header />
-    <Main />
+    <Header sections={sections} />
+    <Main sections={sections} />
     <Footer />
   </div>
 );

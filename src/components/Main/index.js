@@ -1,12 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade';
+import Section from './Section';
 
-const Main = () => {
-  console.log('test');
-  return (
+const Main = ({ sections }) => (
+  <div className="main_fade">
     <main className="main">
-      <h1>Main</h1>
+      {sections.map((section) => (
+        <Fade bottom key={section.name}>
+          <Section section={section} />
+        </Fade>
+      ))}
     </main>
-  );
+  </div>
+);
+
+Main.propTypes = {
+  sections: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Main;

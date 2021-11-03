@@ -1,6 +1,7 @@
 import toutes from '../assets/images/toutes.jpeg';
 import portfolio from '../assets/images/portfolio.jpeg';
 import thelink2 from '../assets/images/thelink2.png';
+import coucou from '../assets/images/coucou.png';
 
 import EN from '../pdfs/tbENCV.pdf';
 import FR from '../pdfs/tbFRCV.pdf';
@@ -91,6 +92,16 @@ For drag and drop functions, I’ve used the react-beautiful-dnd package created
 Finally, the name of the app, the link, is a tribute to the French metal band Gojira who’s a great inspiration for me since their album the link and it’s powerful sound and lyrics, with its deep connection to the human spirit, to the earth and the natural elements.`,
           img: thelink2,
           link: 'https://github.com/theodorebing/Discovery',
+        },
+        {
+          title: 'Coucou!',
+          text: `Coucou! is a social network dedicated to every family, whether small, large, blended, etc ... Coucou! allows everyone to reconnect with their family history, to share their own memories and anecdotes, but also to share the different stages of life with their closest ones, and to share the future together.
+
+The goal is therefore to provide a simple way to keep track of family history and family tree.
+
+The application is by definition for everyone, so it is also aimed at people less comfortable with computers (the elderly and children).`,
+          img: coucou,
+          link: 'https://github.com/theodorebing/projet-coucou',
         },
         {
           title: '18 Toutes',

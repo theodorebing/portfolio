@@ -89,9 +89,10 @@ For drag and drop functions, I’ve used the react-beautiful-dnd package created
 
 Finally, the name of the app, the link, is a tribute to the French metal band Gojira who’s a great inspiration for me since their album the link and it’s powerful sound and lyrics, with its deep connection to the human spirit, to the earth and the natural elements.
 
-This app will be updated. You can access public github repository here https://github.com/theodorebing/Discovery`,
+This app will be updated.`,
           img: thelink2,
-          link: 'https://github.com/theodorebing/Discovery',
+          link: 'https://www.theodorebing.com',
+          githubLink: 'https://github.com/theodorebing/Discovery',
         },
         {
           title: 'Coucou!',

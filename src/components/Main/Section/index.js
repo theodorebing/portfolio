@@ -67,6 +67,16 @@ const Section = ({ section }) => {
                 <a href={link} target="_blank" rel="noreferrer">
                   <h4 className="main-section-title main-section-subtitle">{title}</h4>
                 </a>
+                {link === 'https://www.theodorebing.com' && (
+                <>
+                  <p className="main-section-text main-section-subtext">the link app is available here :</p>
+                  <br />
+                  <a href={link} target="_blank" rel="noreferrer">
+                    <p className="main-section-text main-section-subtext">{link.replace('https://', '')}</p>
+                    <br />
+                  </a>
+                </>
+                )}
                 <p className="main-section-text main-section-subtext">{text}</p>
                 {githubLink && (
                   <a href={githubLink} target="_blank" rel="noreferrer">

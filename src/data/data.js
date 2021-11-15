@@ -76,9 +76,7 @@ I have a creative mind and like to keep it always active with new ideas to reali
       projects: [
         {
           title: 'the link',
-          text: `This app is still under construction and only a public repository is available at the moment.
-
-the link is a simple app I’ve created on my own to store web links in a user-friendly interface.
+          text: `the link is a simple app I’ve created on my own to store web links in a user-friendly interface.
 
 The goal with the link is to be able to store links people share with you or links you want to keep by organizing them in a nice viewable way, with a preview of the link itself, and to store each link inside customisable lists within categories created by users to fit their needs.
 
@@ -89,9 +87,12 @@ Other dependencies can be found in package.json files.
 For the link previews app is using linkpreview.net API.
 For drag and drop functions, I’ve used the react-beautiful-dnd package created by atlassian (Trello).
 
-Finally, the name of the app, the link, is a tribute to the French metal band Gojira who’s a great inspiration for me since their album the link and it’s powerful sound and lyrics, with its deep connection to the human spirit, to the earth and the natural elements.`,
+Finally, the name of the app, the link, is a tribute to the French metal band Gojira who’s a great inspiration for me since their album the link and it’s powerful sound and lyrics, with its deep connection to the human spirit, to the earth and the natural elements.
+
+This app will be updated.`,
           img: thelink2,
-          link: 'https://github.com/theodorebing/Discovery',
+          link: 'https://www.theodorebing.com',
+          githubLink: 'https://github.com/theodorebing/Discovery',
         },
         {
           title: 'Coucou!',
